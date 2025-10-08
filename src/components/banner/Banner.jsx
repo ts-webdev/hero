@@ -5,7 +5,7 @@ import heroImg from "../../assets/hero.png"
 
 const Banner = () => {
     return (
-        <div className='container mx-auto text-center py-20 px-5'>
+        <div className='container mx-auto text-center pt-20 px-5'>
             <h1 className=' text-[3.5rem] md:text-[4.5rem] font-bold text-[#001931] text-base/15 md:text-base/20'>We Build <br /> <span className='text-transparent bg-clip-text bg-linear-120 from-[#632ee3] to-[#9f62f2]'>Productive</span> Apps</h1>
             <p className='text-[#627382] mt-5'>
                 At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br className='hidden md:block' /> Our goal is to turn your ideas into digital experiences that truly make an impact.
