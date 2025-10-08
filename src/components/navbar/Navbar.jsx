@@ -1,12 +1,13 @@
 import React from 'react';
 import logo from '../../assets/logo.png'
 import { FaGithub } from 'react-icons/fa';
+import { Link } from 'react-router';
 
 const Navbar = () => {
     const links = <>
-        <li className='hover:bg-gray-100 py-2 px-4 rounded-sm'>Home</li>
-        <li className='hover:bg-gray-100 py-2 px-4 rounded-sm'>Apps</li>
-        <li className='hover:bg-gray-100 py-2 px-4 rounded-sm'>Installation</li>
+        <Link to={'/'}><li className='hover:bg-gray-100 py-2 px-4 rounded-sm'>Home</li></Link>
+        <Link to={'/apps'}><li className='hover:bg-gray-100 py-2 px-4 rounded-sm'>Apps</li></Link>
+        <Link to={'/installation'}><li className='hover:bg-gray-100 py-2 px-4 rounded-sm'>Installation</li></Link>
     </>
     return (
         <header className='container mx-auto'>
