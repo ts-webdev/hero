@@ -1,13 +1,13 @@
 import React from 'react';
 import logo from '../../assets/logo.png'
 import { FaGithub } from 'react-icons/fa';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
     const links = <>
-        <Link to={'/'}><li className='hover:bg-gray-100 py-2 px-4 rounded-sm'>Home</li></Link>
-        <Link to={'/apps'}><li className='hover:bg-gray-100 py-2 px-4 rounded-sm'>Apps</li></Link>
-        <Link to={'/installation'}><li className='hover:bg-gray-100 py-2 px-4 rounded-sm'>Installation</li></Link>
+        <NavLink to={'/'}><li className='hover:bg-gray-100 py-2 px-4 rounded-sm font-medium'>Home</li></NavLink>
+        <NavLink to={'/apps'}><li className='hover:bg-gray-100 py-2 px-4 rounded-sm font-medium'>Apps</li></NavLink>
+        <NavLink to={'/installation'}><li className='hover:bg-gray-100 py-2 px-4 rounded-sm font-medium'>Installation</li></NavLink>
     </>
     return (
         <header className='container mx-auto'>
@@ -31,10 +31,10 @@ const Navbar = () => {
                             <li><a>Item 3</a></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl text-transparent bg-clip-text bg-linear-120 from-[#632ee3] to-[#9f62f2]">
+                    <Link className="flex items-center gap-1 text-xl font-bold text-transparent bg-clip-text bg-linear-120 from-[#632ee3] to-[#9f62f2]" to={'/'}>
                         <img className='w-[2rem]' src={logo} alt="" />
                         HERO.IO
-                    </a>
+                    </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-5">
@@ -44,8 +44,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn bg-linear-120 from-[#632ee3] to-[#9f62f2] text-white flex items-center">
-                        <FaGithub size={'1.2rem'}/>
+                    <a href="https://github.com/ts-webdev" className="btn bg-linear-120 from-[#632ee3] to-[#9f62f2] text-white flex items-center">
+                        <FaGithub size={'1.2rem'} />
                         Contribute
                     </a>
                 </div>
