@@ -4,7 +4,7 @@ import Status from '../../components/status/Status';
 
 const Home = () => {
     return (
-        <div>
+        <div className='bg-[#d2d2d240]'>
             <Banner></Banner>
             <Status></Status>
         </div>
