@@ -1,18 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router';
 import useAppData from '../../hooks/useAppData';
 import download from '../../assets/icon-downloads.png'
 import ratings from '../../assets/icon-ratings.png'
 import review from '../../assets/icon-review.png'
+import { storeData } from '../../utilities/utilities';
 
 const AppDetails = () => {
+    const [installBtn, setInstallBtn] = useState(true)
+
     const { id } = useParams()
     const { appData, loading } = useAppData();
     const appDetailsData = appData.find(d => d.id === Number(id))
     if (loading) {
         return <p>Loading...</p>
     }
-    const { image, title, companyName, downloads, ratingAvg, reviews, size, description } = appDetailsData
+    
+    const { image, title, companyName, size, description } = appDetailsData
+    const handleInstall = (id) =>{
+        storeData(id)
+        setInstallBtn(false)
+    }
+
     return (
         <div className='bg-[#d2d2d240]'>
             <div className='pt-20 pb-10 container mx-auto'>
@@ -39,7 +48,11 @@ const AppDetails = () => {
                                 <p className='text-4xl font-bold text-[#001931]'>54k</p>
                             </div>
                         </div>
-                        <button className='btn bg-[#00D390] text-white mt-7'>Install Now ({size}MB)</button>
+                        {
+                            installBtn?
+                            <button onClick={()=> handleInstall(id)} className='btn bg-[#00D390] text-white mt-7'>Install Now ({size}MB)</button>:
+                            <button  className='btn bg-[#00D390] text-white mt-7'>Installed</button>
+                        }
                     </div>
                 </div>
                 <hr className='border-gray-300 mt-10' />
