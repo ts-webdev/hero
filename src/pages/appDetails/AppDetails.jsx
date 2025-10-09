@@ -6,6 +6,7 @@ import ratings from '../../assets/icon-ratings.png'
 import review from '../../assets/icon-review.png'
 import { storeData } from '../../utilities/utilities';
 import NumberAbbreviate from 'number-abbreviate';
+import { Bounce, toast } from 'react-toastify';
 
 const AppDetails = () => {
     const [installBtn, setInstallBtn] = useState(true)
@@ -16,11 +17,22 @@ const AppDetails = () => {
     if (loading) {
         return <p>Loading...</p>
     }
-    
+
     const { image, title, companyName, size, description, downloads, ratingAvg, reviews } = appDetailsData
-    const handleInstall = (id) =>{
+    const handleInstall = (id) => {
         storeData(id)
         setInstallBtn(false)
+        toast.success(`"${title}" Installed Successfully`, {
+            position: "top-center",
+            autoClose: 1500,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        });
     }
 
     const numAbbreviate = new NumberAbbreviate(["", "K", 'M', 'B', "T"])
@@ -32,7 +44,7 @@ const AppDetails = () => {
                     <img src={image} alt="" />
                     <div className='grow'>
                         <h3 className='text-3xl font-bold text-[#001931]'>{title}</h3>
-                        <p className='my-1 text-[#627382]'>Developed by <span className='text-transparent bg-clip-text bg-linear-120 from-[#632ee3] to-[#9f62f2]'>{companyName}</span></p>
+                        <p className='my-1 text-[#627382]'>Developed by <span className='text-transparent font-bold bg-clip-text bg-linear-120 from-[#632ee3] to-[#9f62f2]'>{companyName}</span></p>
                         <hr className='border-gray-300' />
                         <div className='flex gap-5'>
                             <div className='mt-7 mr-10'>
@@ -52,9 +64,9 @@ const AppDetails = () => {
                             </div>
                         </div>
                         {
-                            installBtn?
-                            <button onClick={()=> handleInstall(id)} className='btn bg-[#00D390] text-white mt-7'>Install Now ({size}MB)</button>:
-                            <button  className='btn bg-[#00D390] text-white mt-7'>Installed</button>
+                            installBtn ?
+                                <button onClick={() => handleInstall(id)} className='btn bg-[#00D390] text-white mt-7'>Install Now ({size}MB)</button> :
+                                <button disabled className='btn bg-[#00D390] text-white mt-7'>Installed</button>
                         }
                     </div>
                 </div>

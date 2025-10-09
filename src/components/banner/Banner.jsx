@@ -12,11 +12,11 @@ const Banner = () => {
             </p>
             <div className='mt-5 flex flex-col sm:flex-row gap-2 justify-center'>
                 <a href="https://play.google.com/">
-                    <button className='btn sm:w-auto w-2/3 border bg-white hover:bg-gray-100 text-lg font-semibold'>
+                    <button className='btn  sm:w-auto w-2/3 border bg-none hover:bg-gray-100 text-lg font-semibold'>
                         <img className='w-6' src={playStore} alt="" />Google Play</button>
                 </a>
                 <a href="https://www.apple.com/app-store/">
-                    <button className='btn sm:w-auto w-2/3 border bg-white hover:bg-gray-100 text-lg font-semibold'><img className='w-6' src={appStore} alt="" />App Store</button>
+                    <button className='btn  sm:w-auto w-2/3 border bg-none hover:bg-gray-100 text-lg font-semibold'><img className='w-6' src={appStore} alt="" />App Store</button>
                 </a>
             </div>
             <div className='mt-10 flex justify-center'>
