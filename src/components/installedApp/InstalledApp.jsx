@@ -1,11 +1,26 @@
+import NumberAbbreviate from 'number-abbreviate';
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import { RiDownload2Fill } from 'react-icons/ri';
-import { Bounce } from 'react-toastify';
+import { Bounce, toast } from 'react-toastify';
 
 const InstalledApp = ({ app, handleUninstall }) => {
+    let numAbbreviate = new NumberAbbreviate(["", "K", 'M', 'B', "T"])
 
 
+    const handleAlert = () => {
+        toast.info(`"${app.title}" Uninstalled`, {
+            position: "top-right",
+            autoClose: 1500,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        });
+    }
 
     return (
         <ul className="list bg-base-100 rounded-box shadow-md">
@@ -16,18 +31,18 @@ const InstalledApp = ({ app, handleUninstall }) => {
                     <div className='flex gap-3'>
                         <div className='flex items-center gap-1 text-[#00D390] py-1.5 rounded-sm'>
                             <RiDownload2Fill />
-                            <p>9M</p>
+                            <p className=''>{numAbbreviate.abbreviate(app.downloads)}</p>
                         </div>
                         <div className='flex items-center gap-1 text-[#FF8811] py-1.5  rounded-sm'>
                             <FaStar></FaStar>
-                            <p>5</p>
+                            <p>{numAbbreviate.abbreviate(app.reviews)}</p>
                         </div>
                         <div className='flex items-center gap-1 text-[#627382] py-1.5  rounded-sm'>
-                            <p>125MB</p>
+                            <p>{numAbbreviate.abbreviate(app.size)} MB</p>
                         </div>
                     </div>
                 </div>
-                <button onClick={() => handleUninstall(app.id)} className='btn bg-[#00D390] text-white'>Uninstalled</button>
+                <button onClick={() => { handleUninstall(app.id); handleAlert() }} className='btn bg-[#00D390] text-white'>Uninstalled</button>
             </li>
         </ul>
     );
