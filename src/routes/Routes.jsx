@@ -6,6 +6,7 @@ import Apps from '../pages/apps/Apps';
 import ErrorPage from '../pages/errorPage/ErrorPage';
 import AppDetails from '../pages/appDetails/AppDetails';
 import Installation from '../pages/installation/Installation';
+import Loading from '../components/loading/Loading';
 
 export const router = createBrowserRouter([
     {

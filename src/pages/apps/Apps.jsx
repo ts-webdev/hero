@@ -2,15 +2,23 @@ import React, { useState } from 'react';
 import useAppData from '../../hooks/useAppData';
 import AppCard from '../../components/appCard/AppCard';
 import { Link } from 'react-router';
+import Loading from '../../components/loading/Loading';
 
 const Apps = () => {
-    const { appData } = useAppData();
-
+    const { appData, loading } = useAppData();
     const [search, setSearch] = useState('')
+    if (loading) {
+        return <Loading></Loading>
+    }
+
     const term = search.trim().toLocaleLowerCase()
     const searchData = term ? appData.filter(matchData => matchData.title.toLocaleLowerCase().includes(term)) : appData
 
-    const handleShowAll = ()=>{
+    const handleInput = (e) => {
+        setSearch(e.target.value)
+    }
+
+    const handleShowAll = () => {
         setSearch('')
     }
     return (
@@ -21,7 +29,7 @@ const Apps = () => {
                 <div className='flex justify-between mt-10'>
                     <p className='text-2xl font-semibold text-[#001931]'>({searchData.length})Apps Found</p>
                     <label>
-                        <input value={search} onChange={(e) => setSearch(e.target.value)} type="search" placeholder="Type here" className="input" />
+                        <input value={search} onChange={handleInput} type="search" placeholder="Type here" className="input" />
                     </label>
                 </div>
                 {
@@ -35,6 +43,7 @@ const Apps = () => {
                                 searchData.map(singleData => <AppCard key={singleData.id} singleData={singleData}></AppCard>)
                             }
                         </div>
+
                 }
 
 

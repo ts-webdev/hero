@@ -36,7 +36,7 @@ const AppDetails = () => {
         storeData(id)
         setInstallBtn(false)
         toast.success(`"${title}" Installed Successfully`, {
-            position: "top-center",
+            position: "top-right",
             autoClose: 1500,
             hideProgressBar: false,
             closeOnClick: false,

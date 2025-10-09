@@ -1,27 +1,36 @@
 
 const getStoredData = () => {
     const storedDataSTR = localStorage.getItem('installed');
-    if(storedDataSTR){
+    if (storedDataSTR) {
         const storedAppData = JSON.parse(storedDataSTR);
         return storedAppData
     }
-    else{
+    else {
         return []
     }
 }
 
 const storeData = (id) => {
     const storedData = getStoredData()
-    if(storedData.includes(id)){
+    if (storedData.includes(id)) {
         return
     }
-    else{
+    else {
         storedData.push(id)
         const convertJson = JSON.stringify(storedData);
         localStorage.setItem('installed', convertJson)
     }
-    
+
 
 }
 
-export { getStoredData, storeData }
+const removeStoredData = (id) => {
+    const previousData = getStoredData()
+    
+    const removedData = previousData.filter(data => data !== id.toString())
+    
+    const convertJson = JSON.stringify(removedData)
+    localStorage.setItem('installed', convertJson)
+}
+
+export { getStoredData, storeData, removeStoredData }

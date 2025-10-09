@@ -2,10 +2,15 @@ import React from 'react';
 import AppCard from '../appCard/AppCard';
 import { Link } from 'react-router';
 import useAppData from '../../hooks/useAppData';
+import Loading from '../loading/Loading';
 
 const TrendingApp = () => {
-    const {appData} = useAppData()
+    const { appData, loading } = useAppData()
     const data = appData.slice(0, 8)
+    if (loading) {
+        return <Loading></Loading>
+    }
+
     return (
         <div className='container mx-auto py-20'>
             <h2 className='text-[#001931] text-5xl font-bold text-center'>Trending Apps</h2>

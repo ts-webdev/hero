@@ -4,17 +4,32 @@
     "title": "Spotify Music",
     "companyName": "Spotify Ltd.",
     "id": 1001,
-    "description": "Stream millions of songs, podcasts, and playlists on the go. Discover new music every day.",
+    "description": "Spotify Music offers an unmatched audio streaming experience where you can explore millions of songs, podcasts, and playlists tailored to your taste. With intelligent recommendations, you’ll discover new tracks, artists, and genres every day. Whether you’re working out, commuting, or relaxing, Spotify lets you create custom playlists or listen to curated ones for every mood. You can follow your favorite artists, share your playlists with friends, and even enjoy podcasts from around the world. Premium users can download music for offline listening, enjoy ad-free playback, and get higher sound quality. Spotify constantly evolves with features like Blend, Wrapped, and collaborative playlists, making your music journey more personal and social than ever before.",
     "size": 78,
     "reviews": 1250000,
     "ratingAvg": 4.6,
     "downloads": 500000000,
     "ratings": [
-      { "name": "5 star", "count": 900000 },
-      { "name": "4 star", "count": 200000 },
-      { "name": "3 star", "count": 80000 },
-      { "name": "2 star", "count": 40000 },
-      { "name": "1 star", "count": 50000 }
+      {
+        "name": "5 star",
+        "count": 900000
+      },
+      {
+        "name": "4 star",
+        "count": 200000
+      },
+      {
+        "name": "3 star",
+        "count": 80000
+      },
+      {
+        "name": "2 star",
+        "count": 40000
+      },
+      {
+        "name": "1 star",
+        "count": 50000
+      }
     ]
   },
   {
@@ -22,17 +37,32 @@
     "title": "Instagram",
     "companyName": "Meta Platforms, Inc.",
     "id": 1002,
-    "description": "Share photos, videos, and connect with friends across the world with the latest trends and reels.",
+    "description": "Instagram is a vibrant social media platform where people connect, share, and discover content that inspires them. With easy-to-use photo and video tools, users can post moments from their daily lives, share creative reels, and express themselves through stories that disappear after 24 hours. From following friends to exploring trending hashtags and influencers, Instagram allows you to engage with global communities and stay updated with the latest trends. Businesses and creators can build audiences, run ads, and sell products directly through the app. With added features like direct messaging, shopping tabs, and live streaming, Instagram continues to evolve into a complete hub for creativity, connection, and discovery.",
     "size": 120,
     "reviews": 3000000,
     "ratingAvg": 4.4,
     "downloads": 1000000000,
     "ratings": [
-      { "name": "5 star", "count": 1350000 },
-      { "name": "4 star", "count": 900000 },
-      { "name": "3 star", "count": 400000 },
-      { "name": "2 star", "count": 200000 },
-      { "name": "1 star", "count": 150000 }
+      {
+        "name": "5 star",
+        "count": 1350000
+      },
+      {
+        "name": "4 star",
+        "count": 900000
+      },
+      {
+        "name": "3 star",
+        "count": 400000
+      },
+      {
+        "name": "2 star",
+        "count": 200000
+      },
+      {
+        "name": "1 star",
+        "count": 150000
+      }
     ]
   },
   {
@@ -40,17 +70,32 @@
     "title": "WhatsApp Messenger",
     "companyName": "WhatsApp LLC",
     "id": 1003,
-    "description": "Free messaging and calling app with end-to-end encryption for secure communication.",
+    "description": "WhatsApp Messenger is one of the world’s most trusted communication apps, offering secure and instant messaging for individuals and groups. It allows users to send text messages, make voice and video calls, and share photos, videos, and documents—all protected with end-to-end encryption. Whether you’re chatting with friends or managing business communication, WhatsApp provides a fast, reliable, and easy-to-use interface. You can create group chats, broadcast messages, and even use WhatsApp Web for desktop access. The app also includes features like disappearing messages, community groups, and status updates. With minimal ads and a clean interface, WhatsApp remains a go-to platform for connecting with people across the globe.",
     "size": 65,
     "reviews": 2200000,
     "ratingAvg": 4.5,
     "downloads": 1000000000,
     "ratings": [
-      { "name": "5 star", "count": 1200000 },
-      { "name": "4 star", "count": 600000 },
-      { "name": "3 star", "count": 200000 },
-      { "name": "2 star", "count": 80000 },
-      { "name": "1 star", "count": 120000 }
+      {
+        "name": "5 star",
+        "count": 1200000
+      },
+      {
+        "name": "4 star",
+        "count": 600000
+      },
+      {
+        "name": "3 star",
+        "count": 200000
+      },
+      {
+        "name": "2 star",
+        "count": 80000
+      },
+      {
+        "name": "1 star",
+        "count": 120000
+      }
     ]
   },
   {
@@ -58,17 +103,32 @@
     "title": "Netflix",
     "companyName": "Netflix, Inc.",
     "id": 1004,
-    "description": "Watch TV shows, movies, and Netflix Originals. Stream anytime, anywhere on any device.",
+    "description": "Netflix is the ultimate entertainment streaming service that offers a massive collection of movies, TV shows, documentaries, and exclusive Netflix Originals. With a user-friendly interface and personalized recommendations, you can easily find what to watch next. Subscribers can stream or download content for offline viewing and switch between multiple devices, including smart TVs, tablets, and smartphones. Netflix constantly updates its library, bringing the latest international hits and timeless classics to your fingertips. Whether you enjoy thrilling dramas, romantic comedies, or family-friendly animations, Netflix ensures an uninterrupted experience with ad-free streaming and customizable profiles for every member of your household.",
     "size": 140,
     "reviews": 950000,
     "ratingAvg": 4.3,
     "downloads": 100000000,
     "ratings": [
-      { "name": "5 star", "count": 440000 },
-      { "name": "4 star", "count": 250000 },
-      { "name": "3 star", "count": 130000 },
-      { "name": "2 star", "count": 60000 },
-      { "name": "1 star", "count": 70000 }
+      {
+        "name": "5 star",
+        "count": 440000
+      },
+      {
+        "name": "4 star",
+        "count": 250000
+      },
+      {
+        "name": "3 star",
+        "count": 130000
+      },
+      {
+        "name": "2 star",
+        "count": 60000
+      },
+      {
+        "name": "1 star",
+        "count": 70000
+      }
     ]
   },
   {
@@ -76,17 +136,32 @@
     "title": "TikTok",
     "companyName": "ByteDance Ltd.",
     "id": 1005,
-    "description": "Create and watch short videos on the most entertaining platform for global creators.",
+    "description": "TikTok is the world’s leading platform for creating, discovering, and sharing short-form videos. Whether it’s music, dance, comedy, or everyday moments, TikTok allows users to express themselves creatively in under a minute. With advanced editing tools, filters, and soundtracks, you can transform your clips into engaging content in seconds. The app’s smart algorithm tailors your ‘For You’ feed based on your interests, ensuring every swipe brings something exciting. TikTok has become a global community where creators, brands, and viewers connect through trends, challenges, and live streaming. From learning life hacks to exploring viral sensations, TikTok offers endless entertainment in a fun and interactive way.",
     "size": 98,
     "reviews": 2100000,
     "ratingAvg": 4.2,
     "downloads": 1000000000,
     "ratings": [
-      { "name": "5 star", "count": 820000 },
-      { "name": "4 star", "count": 700000 },
-      { "name": "3 star", "count": 250000 },
-      { "name": "2 star", "count": 150000 },
-      { "name": "1 star", "count": 180000 }
+      {
+        "name": "5 star",
+        "count": 820000
+      },
+      {
+        "name": "4 star",
+        "count": 700000
+      },
+      {
+        "name": "3 star",
+        "count": 250000
+      },
+      {
+        "name": "2 star",
+        "count": 150000
+      },
+      {
+        "name": "1 star",
+        "count": 180000
+      }
     ]
   },
   {
@@ -94,17 +169,32 @@
     "title": "Snapchat",
     "companyName": "Snap Inc.",
     "id": 1006,
-    "description": "Share moments instantly with friends using fun filters, chat, and stories.",
+    "description": "Snapchat is a fast and fun way to share special moments with friends and family. It allows you to send photos and short videos that disappear after being viewed, making every interaction spontaneous and genuine. With its wide range of creative filters, lenses, and Bitmojis, you can bring your snaps to life in unique ways. Stories let you share your day with all your friends, while Spotlight showcases viral content from creators worldwide. Snapchat also features chat, video calls, and Snap Map, so you can see where your friends are and what they’re up to. From staying connected to expressing yourself creatively, Snapchat keeps communication light, fun, and authentic.",
     "size": 75,
     "reviews": 1100000,
     "ratingAvg": 4.1,
     "downloads": 100000000,
     "ratings": [
-      { "name": "5 star", "count": 490000 },
-      { "name": "4 star", "count": 340000 },
-      { "name": "3 star", "count": 160000 },
-      { "name": "2 star", "count": 90000 },
-      { "name": "1 star", "count": 120000 }
+      {
+        "name": "5 star",
+        "count": 490000
+      },
+      {
+        "name": "4 star",
+        "count": 340000
+      },
+      {
+        "name": "3 star",
+        "count": 160000
+      },
+      {
+        "name": "2 star",
+        "count": 90000
+      },
+      {
+        "name": "1 star",
+        "count": 120000
+      }
     ]
   },
   {
@@ -112,17 +202,32 @@
     "title": "YouTube",
     "companyName": "Google LLC",
     "id": 1007,
-    "description": "Watch, upload, and share videos with the world's largest video community.",
+    "description": "YouTube is the world’s largest video-sharing platform where millions of creators upload, watch, and share videos every day. From music and education to entertainment and news, YouTube has content for everyone. The platform recommends videos based on your viewing habits, making it easy to discover new creators and trends. Users can subscribe to their favorite channels, like, comment, and even download videos for offline viewing with YouTube Premium. Live streaming and Shorts bring creators closer to audiences through real-time interaction and quick, engaging content. Whether you’re learning a skill, following gaming streams, or exploring vlogs, YouTube connects you to endless inspiration and knowledge.",
     "size": 115,
     "reviews": 5000000,
     "ratingAvg": 4.7,
     "downloads": 1000000000,
     "ratings": [
-      { "name": "5 star", "count": 3350000 },
-      { "name": "4 star", "count": 800000 },
-      { "name": "3 star", "count": 400000 },
-      { "name": "2 star", "count": 190000 },
-      { "name": "1 star", "count": 250000 }
+      {
+        "name": "5 star",
+        "count": 3350000
+      },
+      {
+        "name": "4 star",
+        "count": 800000
+      },
+      {
+        "name": "3 star",
+        "count": 400000
+      },
+      {
+        "name": "2 star",
+        "count": 190000
+      },
+      {
+        "name": "1 star",
+        "count": 250000
+      }
     ]
   },
   {
@@ -130,17 +235,32 @@
     "title": "X (Twitter)",
     "companyName": "X Corp.",
     "id": 1008,
-    "description": "Join conversations, follow your interests, and share your thoughts in real-time.",
+    "description": "X (formerly Twitter) is the go-to platform for real-time conversations, breaking news, and public discussion. Users can post short messages called tweets, follow topics they love, and engage with global communities instantly. From world leaders and celebrities to journalists and everyday users, everyone shares their thoughts and ideas here. X enables multimedia sharing, polls, live Spaces for audio discussions, and private messaging for personal conversations. Its algorithm curates a personalized feed based on interests, ensuring you stay informed about the latest trends. Whether you’re joining global movements, exploring niche interests, or simply connecting with friends, X makes your voice part of the world’s ongoing dialogue.",
     "size": 85,
     "reviews": 1250000,
     "ratingAvg": 4.0,
     "downloads": 500000000,
     "ratings": [
-      { "name": "5 star", "count": 460000 },
-      { "name": "4 star", "count": 350000 },
-      { "name": "3 star", "count": 180000 },
-      { "name": "2 star", "count": 110000 },
-      { "name": "1 star", "count": 150000 }
+      {
+        "name": "5 star",
+        "count": 460000
+      },
+      {
+        "name": "4 star",
+        "count": 350000
+      },
+      {
+        "name": "3 star",
+        "count": 180000
+      },
+      {
+        "name": "2 star",
+        "count": 110000
+      },
+      {
+        "name": "1 star",
+        "count": 150000
+      }
     ]
   },
   {
@@ -148,17 +268,32 @@
     "title": "Google Maps",
     "companyName": "Google LLC",
     "id": 1009,
-    "description": "Navigate and explore the world with live traffic, transit, and location information.",
+    "description": "Google Maps helps you explore and navigate the world with detailed maps, real-time traffic updates, and turn-by-turn directions. Whether you’re driving, walking, cycling, or using public transport, the app provides accurate routes and estimated travel times. With millions of business listings, you can find restaurants, hotels, gas stations, and attractions near you. Street View offers 360° visuals of places, while offline maps allow navigation even without internet access. Google Maps also supports reviews, photos, and location sharing, helping you plan trips and explore safely. Constantly updated with live traffic data and local insights, it’s an essential tool for travel and everyday commuting.",
     "size": 130,
     "reviews": 2400000,
     "ratingAvg": 4.5,
     "downloads": 5000000000,
     "ratings": [
-      { "name": "5 star", "count": 1480000 },
-      { "name": "4 star", "count": 500000 },
-      { "name": "3 star", "count": 200000 },
-      { "name": "2 star", "count": 100000 },
-      { "name": "1 star", "count": 120000 }
+      {
+        "name": "5 star",
+        "count": 1480000
+      },
+      {
+        "name": "4 star",
+        "count": 500000
+      },
+      {
+        "name": "3 star",
+        "count": 200000
+      },
+      {
+        "name": "2 star",
+        "count": 100000
+      },
+      {
+        "name": "1 star",
+        "count": 120000
+      }
     ]
   },
   {
@@ -166,17 +301,32 @@
     "title": "Telegram",
     "companyName": "Telegram FZ-LLC",
     "id": 1010,
-    "description": "Fast, secure messaging app with cloud-based storage and group chat features.",
+    "description": "Telegram is a powerful cloud-based messaging platform designed for speed and security. It allows users to send text messages, photos, videos, and files of any type without size limitations. With its end-to-end encrypted secret chats, Telegram ensures privacy and safety in personal communication. You can create group chats for thousands of members, build channels for broadcasting to large audiences, and use bots for automation or entertainment. Telegram also supports stickers, reactions, and voice chats, making interactions more expressive. Since all data is stored in the cloud, you can access your messages from multiple devices seamlessly. It’s the perfect app for both casual conversations and professional collaboration.",
     "size": 70,
     "reviews": 850000,
     "ratingAvg": 4.6,
     "downloads": 1000000000,
     "ratings": [
-      { "name": "5 star", "count": 510000 },
-      { "name": "4 star", "count": 200000 },
-      { "name": "3 star", "count": 70000 },
-      { "name": "2 star", "count": 30000 },
-      { "name": "1 star", "count": 40000 }
+      {
+        "name": "5 star",
+        "count": 510000
+      },
+      {
+        "name": "4 star",
+        "count": 200000
+      },
+      {
+        "name": "3 star",
+        "count": 70000
+      },
+      {
+        "name": "2 star",
+        "count": 30000
+      },
+      {
+        "name": "1 star",
+        "count": 40000
+      }
     ]
   },
   {
@@ -184,17 +334,32 @@
     "title": "Zoom Meetings",
     "companyName": "Zoom Video Communications, Inc.",
     "id": 1011,
-    "description": "Video conferencing platform for online meetings, webinars, and team collaboration.",
+    "description": "Zoom Meetings is a reliable video conferencing platform that connects people across the globe for virtual meetings, classes, and events. With high-definition video and crystal-clear audio, Zoom provides a seamless experience for individuals, businesses, and educators. You can host meetings, share screens, use virtual backgrounds, and collaborate through chat and breakout rooms. The app also supports webinars and cloud recording, making it perfect for professional communication. Its intuitive interface ensures that participants can join with a single click, from any device. Zoom has become an essential tool for remote work, online learning, and staying connected with teams and loved ones anywhere in the world.",
     "size": 95,
     "reviews": 780000,
     "ratingAvg": 4.3,
     "downloads": 500000000,
     "ratings": [
-      { "name": "5 star", "count": 320000 },
-      { "name": "4 star", "count": 250000 },
-      { "name": "3 star", "count": 100000 },
-      { "name": "2 star", "count": 50000 },
-      { "name": "1 star", "count": 60000 }
+      {
+        "name": "5 star",
+        "count": 320000
+      },
+      {
+        "name": "4 star",
+        "count": 250000
+      },
+      {
+        "name": "3 star",
+        "count": 100000
+      },
+      {
+        "name": "2 star",
+        "count": 50000
+      },
+      {
+        "name": "1 star",
+        "count": 60000
+      }
     ]
   },
   {
@@ -202,17 +367,32 @@
     "title": "Airbnb",
     "companyName": "Airbnb, Inc.",
     "id": 1012,
-    "description": "Find unique places to stay and explore global travel experiences with ease.",
+    "description": "Airbnb is your gateway to discovering unique stays and travel experiences around the world. From cozy apartments and beachfront villas to treehouses and castles, Airbnb offers a vast range of accommodations to suit every traveler. You can book directly with hosts, explore local experiences, and find stays that fit your budget and style. The platform emphasizes trust and safety with verified hosts, guest reviews, and secure payments. Whether you’re planning a short city break or a long-term getaway, Airbnb helps you feel at home wherever you go. It’s more than just a place to stay—it’s a way to experience destinations through the eyes of locals.",
     "size": 88,
     "reviews": 640000,
     "ratingAvg": 4.7,
     "downloads": 200000000,
     "ratings": [
-      { "name": "5 star", "count": 445000 },
-      { "name": "4 star", "count": 120000 },
-      { "name": "3 star", "count": 40000 },
-      { "name": "2 star", "count": 15000 },
-      { "name": "1 star", "count": 20000 }
+      {
+        "name": "5 star",
+        "count": 445000
+      },
+      {
+        "name": "4 star",
+        "count": 120000
+      },
+      {
+        "name": "3 star",
+        "count": 40000
+      },
+      {
+        "name": "2 star",
+        "count": 15000
+      },
+      {
+        "name": "1 star",
+        "count": 20000
+      }
     ]
   },
   {
@@ -220,17 +400,32 @@
     "title": "Canva",
     "companyName": "Canva Pty Ltd",
     "id": 1013,
-    "description": "Design anything—presentations, posts, or posters—with powerful drag-and-drop tools.",
+    "description": "Canva is an intuitive graphic design platform that empowers anyone to create stunning visuals effortlessly. Whether you’re designing social media posts, business cards, presentations, or posters, Canva offers thousands of customizable templates to get started. Its drag-and-drop interface makes designing quick and fun, even for beginners. You can access millions of free photos, icons, and fonts, or upload your own assets for a personal touch. Canva also supports team collaboration, allowing multiple people to edit and comment in real-time. With cloud storage and cross-device syncing, you can design anywhere, anytime. From professionals to students, Canva makes visual creativity simple and accessible to all.",
     "size": 105,
     "reviews": 520000,
     "ratingAvg": 4.8,
     "downloads": 250000000,
     "ratings": [
-      { "name": "5 star", "count": 373000 },
-      { "name": "4 star", "count": 90000 },
-      { "name": "3 star", "count": 30000 },
-      { "name": "2 star", "count": 12000 },
-      { "name": "1 star", "count": 15000 }
+      {
+        "name": "5 star",
+        "count": 373000
+      },
+      {
+        "name": "4 star",
+        "count": 90000
+      },
+      {
+        "name": "3 star",
+        "count": 30000
+      },
+      {
+        "name": "2 star",
+        "count": 12000
+      },
+      {
+        "name": "1 star",
+        "count": 15000
+      }
     ]
   },
   {
@@ -238,17 +433,32 @@
     "title": "Uber Eats",
     "companyName": "Uber Technologies, Inc.",
     "id": 1014,
-    "description": "Order food from your favorite restaurants and get it delivered quickly to your doorstep.",
+    "description": "Uber Eats connects hungry users with their favorite local restaurants and delivers delicious meals right to their doorstep. The app makes ordering food easy—browse menus, customize orders, and track your delivery in real time. With a wide range of cuisines, from fast food to fine dining, you’ll find something to satisfy every craving. Uber Eats provides estimated delivery times, contactless options, and live driver updates for convenience and safety. You can also explore exclusive deals, ratings, and reviews before placing your order. Whether it’s breakfast, lunch, dinner, or a late-night snack, Uber Eats ensures your favorite meals are always just a few taps away.",
     "size": 90,
     "reviews": 460000,
     "ratingAvg": 4.2,
     "downloads": 300000000,
     "ratings": [
-      { "name": "5 star", "count": 175000 },
-      { "name": "4 star", "count": 140000 },
-      { "name": "3 star", "count": 70000 },
-      { "name": "2 star", "count": 35000 },
-      { "name": "1 star", "count": 40000 }
+      {
+        "name": "5 star",
+        "count": 175000
+      },
+      {
+        "name": "4 star",
+        "count": 140000
+      },
+      {
+        "name": "3 star",
+        "count": 70000
+      },
+      {
+        "name": "2 star",
+        "count": 35000
+      },
+      {
+        "name": "1 star",
+        "count": 40000
+      }
     ]
   },
   {
@@ -256,17 +466,32 @@
     "title": "Duolingo",
     "companyName": "Duolingo, Inc.",
     "id": 1015,
-    "description": "Learn new languages for free with fun lessons, quizzes, and speaking practice.",
+    "description": "Duolingo is a fun and effective language learning app designed to make mastering new languages accessible to everyone. Through bite-sized lessons, interactive exercises, and gamified challenges, it helps you build vocabulary, improve grammar, and develop real conversational skills. You can learn popular languages like Spanish, French, German, and Japanese—or even fictional ones like Klingon. The app tracks your progress with streaks, leaderboards, and daily goals to keep you motivated. Duolingo’s AI-driven learning adapts to your pace, ensuring that lessons fit your skill level. Whether you’re learning for travel, work, or personal growth, Duolingo turns language learning into an enjoyable daily habit.",
     "size": 60,
     "reviews": 890000,
     "ratingAvg": 4.7,
     "downloads": 500000000,
     "ratings": [
-      { "name": "5 star", "count": 635000 },
-      { "name": "4 star", "count": 150000 },
-      { "name": "3 star", "count": 50000 },
-      { "name": "2 star", "count": 25000 },
-      { "name": "1 star", "count": 30000 }
+      {
+        "name": "5 star",
+        "count": 635000
+      },
+      {
+        "name": "4 star",
+        "count": 150000
+      },
+      {
+        "name": "3 star",
+        "count": 50000
+      },
+      {
+        "name": "2 star",
+        "count": 25000
+      },
+      {
+        "name": "1 star",
+        "count": 30000
+      }
     ]
   }
 ]

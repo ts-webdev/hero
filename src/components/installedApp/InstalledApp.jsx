@@ -1,8 +1,12 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import { RiDownload2Fill } from 'react-icons/ri';
+import { Bounce } from 'react-toastify';
 
-const InstalledApp = ({ app }) => {
+const InstalledApp = ({ app, handleUninstall }) => {
+
+
+
     return (
         <ul className="list bg-base-100 rounded-box shadow-md">
             <li className="list-row items-center">
@@ -23,7 +27,7 @@ const InstalledApp = ({ app }) => {
                         </div>
                     </div>
                 </div>
-                <button className='btn bg-[#00D390] text-white'>Uninstalled</button>
+                <button onClick={() => handleUninstall(app.id)} className='btn bg-[#00D390] text-white'>Uninstalled</button>
             </li>
         </ul>
     );

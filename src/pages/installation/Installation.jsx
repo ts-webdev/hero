@@ -1,23 +1,46 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import useAppData from '../../hooks/useAppData';
-import { getStoredData } from '../../utilities/utilities';
+import { getStoredData, removeStoredData } from '../../utilities/utilities';
 import InstalledApp from '../../components/installedApp/InstalledApp';
+import Loading from '../../components/loading/Loading';
+import { Bounce, toast } from 'react-toastify';
 
 const Installation = () => {
+    const [storedId, setInstalledApp] = useState([])
     const { appData, loading } = useAppData()
 
-    if (loading) {
-        return <p>Loading...</p>
+    const handleUninstall = (id) => {
+        removeStoredData(id)
+        const appId = getStoredData()
+        const convertedAppId = appId.map(id => Number(id))
+        setInstalledApp(convertedAppId)
+        
+        toast.info(`App Uninstalled`, {
+            position: "top-right",
+            autoClose: 1500,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        });
     }
 
-    const appId = getStoredData()
-    const convertedAppId = appId.map(id => Number(id))
+    useEffect(() => {
+        const appId = getStoredData()
+        const convertedAppId = appId.map(id => Number(id))
+        setInstalledApp(convertedAppId)
+    }, [])
 
-    const installedApp = appData.filter(singleApp => convertedAppId.includes(singleApp.id))
+    if (loading) {
+        return <Loading></Loading>
+    }
+
+    const installedApp = appData.filter(singleApp => storedId.includes(singleApp.id))
 
 
-    // 
-    // console.log(installedApp)
     return (
         <div className='bg-[#d2d2d240]'>
             <div className='container mx-auto py-20'>
@@ -35,7 +58,7 @@ const Installation = () => {
                 </div>
                 <div className='space-y-3'>
                     {
-                        installedApp.map(app => <InstalledApp key={app.id} app={app}></InstalledApp>)
+                        installedApp.map(app => <InstalledApp key={app.id} app={app} handleUninstall={handleUninstall}></InstalledApp>)
                     }
                 </div>
             </div>
