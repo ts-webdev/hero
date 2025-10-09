@@ -3,9 +3,12 @@ import { FaDownLong } from 'react-icons/fa6';
 import { RiDownload2Fill } from 'react-icons/ri';
 import { FaStar } from 'react-icons/fa';
 import { Link } from 'react-router';
+import NumberAbbreviate from 'number-abbreviate';
 
 const AppCard = ({ singleData }) => {
-    const { title, image, ratingAvg, id } = singleData;
+    let numAbbreviate = new NumberAbbreviate(["", "K", 'M', 'B', "T"])
+
+    const { title, image, ratingAvg, id, downloads } = singleData;
     return (
         <Link to={`/app-details/${id}`}>
             <div className='shadow-lg bg-white p-4 rounded-lg hover:scale-105 transition ease-in-out h-full flex flex-col'>
@@ -20,7 +23,7 @@ const AppCard = ({ singleData }) => {
                     <div className='flex justify-between'>
                         <div className='flex items-center gap-1 bg-[#F1F5E8] text-[#00D390] py-1.5 px-2.5 rounded-sm'>
                             <RiDownload2Fill />
-                            <p>9M</p>
+                            <p>{numAbbreviate.abbreviate(downloads)}</p>
                         </div>
                         <div className='flex items-center gap-1 bg-[#FFF0E1] text-[#FF8811] py-1.5 px-2.5 rounded-sm'>
                             <FaStar></FaStar>

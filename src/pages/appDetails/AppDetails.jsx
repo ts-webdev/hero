@@ -5,6 +5,7 @@ import download from '../../assets/icon-downloads.png'
 import ratings from '../../assets/icon-ratings.png'
 import review from '../../assets/icon-review.png'
 import { storeData } from '../../utilities/utilities';
+import NumberAbbreviate from 'number-abbreviate';
 
 const AppDetails = () => {
     const [installBtn, setInstallBtn] = useState(true)
@@ -16,11 +17,13 @@ const AppDetails = () => {
         return <p>Loading...</p>
     }
     
-    const { image, title, companyName, size, description } = appDetailsData
+    const { image, title, companyName, size, description, downloads, ratingAvg, reviews } = appDetailsData
     const handleInstall = (id) =>{
         storeData(id)
         setInstallBtn(false)
     }
+
+    const numAbbreviate = new NumberAbbreviate(["", "K", 'M', 'B', "T"])
 
     return (
         <div className='bg-[#d2d2d240]'>
@@ -35,17 +38,17 @@ const AppDetails = () => {
                             <div className='mt-7 mr-10'>
                                 <img src={download} />
                                 <p className='my-1'>Downloads</p>
-                                <p className='text-4xl font-bold text-[#001931]'>8M</p>
+                                <p className='text-4xl font-bold text-[#001931]'>{numAbbreviate.abbreviate(downloads)}</p>
                             </div>
                             <div className='mt-7 mr-10'>
                                 <img src={ratings} />
                                 <p className='my-1'>Average Ratings</p>
-                                <p className='text-4xl font-bold text-[#001931]'>4.9</p>
+                                <p className='text-4xl font-bold text-[#001931]'>{ratingAvg}</p>
                             </div>
                             <div className='mt-7 mr-10'>
                                 <img src={review} />
                                 <p className='my-1'>Total Reviews</p>
-                                <p className='text-4xl font-bold text-[#001931]'>54k</p>
+                                <p className='text-4xl font-bold text-[#001931]'>{numAbbreviate.abbreviate(reviews)}</p>
                             </div>
                         </div>
                         {
