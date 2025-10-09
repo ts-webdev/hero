@@ -2,13 +2,26 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router';
 import useAppData from '../../hooks/useAppData';
 import download from '../../assets/icon-downloads.png'
-import ratings from '../../assets/icon-ratings.png'
+import ratingsImg from '../../assets/icon-ratings.png'
 import review from '../../assets/icon-review.png'
 import { storeData } from '../../utilities/utilities';
 import NumberAbbreviate from 'number-abbreviate';
 import { Bounce, toast } from 'react-toastify';
+import {
+    ComposedChart,
+    Line,
+    Area,
+    Bar,
+    XAxis,
+    YAxis,
+    CartesianGrid,
+    Tooltip,
+    Legend,
+    ResponsiveContainer,
+} from 'recharts';
 
 const AppDetails = () => {
+
     const [installBtn, setInstallBtn] = useState(true)
 
     const { id } = useParams()
@@ -18,7 +31,7 @@ const AppDetails = () => {
         return <p>Loading...</p>
     }
 
-    const { image, title, companyName, size, description, downloads, ratingAvg, reviews } = appDetailsData
+    const { image, title, companyName, size, description, downloads, ratingAvg, reviews, ratings } = appDetailsData
     const handleInstall = (id) => {
         storeData(id)
         setInstallBtn(false)
@@ -53,7 +66,7 @@ const AppDetails = () => {
                                 <p className='text-4xl font-bold text-[#001931]'>{numAbbreviate.abbreviate(downloads)}</p>
                             </div>
                             <div className='mt-7 mr-10'>
-                                <img src={ratings} />
+                                <img src={ratingsImg} />
                                 <p className='my-1'>Average Ratings</p>
                                 <p className='text-4xl font-bold text-[#001931]'>{ratingAvg}</p>
                             </div>
@@ -71,6 +84,27 @@ const AppDetails = () => {
                     </div>
                 </div>
                 <hr className='border-gray-300 mt-10' />
+                <div className='w-full h-[25rem] my-10'>
+                    <ResponsiveContainer width="100%" height="100%">
+                        <ComposedChart
+                            layout="vertical"
+                            width={500}
+                            height={400}
+                            data={ratings}
+                            margin={{
+                                top: 20,
+                                right: 20,
+                                bottom: 20,
+                                left: 20,
+                            }}
+                        >
+                            <XAxis type="number" />
+                            <YAxis dataKey="name" type="category" />
+                            <Tooltip />
+                            <Bar dataKey="count" barSize={35} fill="#FF8811" />
+                        </ComposedChart>
+                    </ResponsiveContainer>
+                </div>
                 <hr className='border-gray-300 mt-10' />
                 <div className='py-10'>
                     <h3 className='text-2xl font-semibold text-[#001931]'>Description</h3>
