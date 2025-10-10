@@ -50,10 +50,10 @@ const Installation = () => {
     }
     return (
         <div className='bg-[#d2d2d240]'>
-            <div className='container mx-auto py-20'>
+            <div className='container mx-auto py-20 px-5'>
                 <h1 className='text-4xl font-bold text-center text-[#001931]'>Your Installed Apps</h1>
                 <p className='text-[#627382] text-center'>Explore All Trending Apps on the Market developed by us</p>
-                <div className='flex justify-between items-center mt-10 mb-2'>
+                <div className='flex flex-col sm:flex-row gap-2  sm:gap-0 justify-between items-center mt-10 mb-2'>
                     <p className='text-2xl font-semibold text-[#001931]'>({allInstalledData.length})Apps Found</p>
                     <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn m-1 flex items-center">{sort ? sort : 'Sort By Size'} <IoMdArrowDropdown size={24} />

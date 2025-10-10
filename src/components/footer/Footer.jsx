@@ -5,7 +5,7 @@ import logo from '../../assets/logo.png'
 const Footer = () => {
     return (
         <footer className='bg-[#2d0097]'>
-            <div className="footer justify-between container mx-auto sm:footer-horizontal  py-10 text-white">
+            <div className="footer justify-between container mx-auto sm:footer-horizontal px-5 py-10 text-white">
                 <aside >
                     <Link className="flex items-center gap-1 text-3xl font-bold text-white" to={'/'}>
                         <img className='w-[3rem]' src={logo} alt="" />

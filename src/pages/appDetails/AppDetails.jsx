@@ -70,35 +70,37 @@ const AppDetails = () => {
 
     return (
         <div className='bg-[#d2d2d240]'>
-            <div className='pt-20 pb-10 container mx-auto'>
-                <div className='flex items-center  gap-10'>
+            <div className='pt-20 pb-10 container mx-auto px-5'>
+                <div className='flex flex-col md:flex-row items-center gap-10 '>
                     <img src={image} alt="" />
-                    <div className='grow'>
+                    <div className='sm:grow'>
                         <h3 className='text-3xl font-bold text-[#001931]'>{title}</h3>
                         <p className='my-1 text-[#627382]'>Developed by <span className='text-transparent font-bold bg-clip-text bg-linear-120 from-[#632ee3] to-[#9f62f2]'>{companyName}</span></p>
                         <hr className='border-gray-300' />
-                        <div className='flex gap-5'>
-                            <div className='mt-7 mr-10'>
+                        <div className='flex flex-col sm:flex-row items-center sm:items-start gap-5'>
+                            <div className='mt-7 sm:mr-10 flex sm:block flex-col items-center'>
                                 <img src={download} />
                                 <p className='my-1'>Downloads</p>
                                 <p className='text-4xl font-bold text-[#001931]'>{numAbbreviate.abbreviate(downloads)}</p>
                             </div>
-                            <div className='mt-7 mr-10'>
+                            <div className='mt-7 sm:mr-10 flex sm:block flex-col items-center'>
                                 <img src={ratingsImg} />
                                 <p className='my-1'>Average Ratings</p>
                                 <p className='text-4xl font-bold text-[#001931]'>{ratingAvg}</p>
                             </div>
-                            <div className='mt-7 mr-10'>
+                            <div className='mt-7 sm:mr-10 flex sm:block flex-col items-center'>
                                 <img src={review} />
                                 <p className='my-1'>Total Reviews</p>
                                 <p className='text-4xl font-bold text-[#001931]'>{numAbbreviate.abbreviate(reviews)}</p>
                             </div>
                         </div>
-                        <button disabled={installedBtn ? 'disabled' : ''} onClick={() => handleInstall(id)} className='btn bg-[#00D390] text-white mt-7'>{installedBtn ? 'Installed' : `Install Now (${size}MB)`}</button>
+                        <div className='flex sm:block justify-center'>
+                            <button disabled={installedBtn ? 'disabled' : ''} onClick={() => handleInstall(id)} className='btn bg-[#00D390] text-white mt-7'>{installedBtn ? 'Installed' : `Install Now (${size}MB)`}</button>
+                        </div>
                     </div>
                 </div>
                 <hr className='border-gray-300 mt-10' />
-                <div className='w-full h-[25rem] my-10'>
+                <div className='w-full h-[25rem] my-10  pr-5'>
                     <ResponsiveContainer width="100%" height="100%">
                         <ComposedChart
                             layout="vertical"

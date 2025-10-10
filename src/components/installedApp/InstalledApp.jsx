@@ -28,7 +28,7 @@ const InstalledApp = ({ app, handleUninstall }) => {
                 <div><img className="size-16 rounded-box" src={app.image} /></div>
                 <div>
                     <div className='text-xl font-medium text-[#001931]'>{app.title}</div>
-                    <div className='flex gap-3'>
+                    <div className='sm:flex gap-3 hidden'>
                         <div className='flex items-center gap-1 text-[#00D390] py-1.5 rounded-sm'>
                             <RiDownload2Fill />
                             <p className=''>{numAbbreviate.abbreviate(app.downloads)}</p>

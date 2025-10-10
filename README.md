@@ -1,16 +1,36 @@
-# React + Vite
+# 🌟 Hero.io
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Hero.io** is a modern single-page web application inspired by app stores like **Google Play** and **Apple App Store**.  
+Users can explore various types of apps, view details, and **install or uninstall** them dynamically.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 🏠 **Home Page** – Showcases featured and popular apps.  
+- 📱 **Apps Page** – Displays a full list of available apps with detailed information.  
+- ⚙️ **Installation Page** – Allows users to manage installed apps (install/uninstall).  
+- 🔄 **Single Page Application (SPA)** – Built using **React Router** for seamless navigation.  
+- 🌐 **Real-time UI updates** with interactive components and animations.  
+- 🔔 **Toast notifications** for actions like install/uninstall.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧩 Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Built with the latest web technologies to ensure speed, scalability, and a modern design:
+
+| Category | Technology |
+|-----------|-------------|
+| Frontend Framework | [React 19](https://react.dev/) |
+| Styling | [Tailwind CSS](https://tailwindcss.com/) |
+| Routing | [React Router](https://reactrouter.com/) |
+| HTTP Requests | [Axios](https://axios-http.com/) |
+| Charts & Visualization | [Recharts](https://recharts.org/) |
+| Notifications | [React Toastify](https://fkhadra.github.io/react-toastify/) |
+| Icons | [React Icons](https://react-icons.github.io/react-icons/) |
+| Number Formatting | [Number Abbreviate](https://www.npmjs.com/package/number-abbreviate) |
+
+---
+
+

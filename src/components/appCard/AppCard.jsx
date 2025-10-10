@@ -10,7 +10,7 @@ const AppCard = ({ singleData }) => {
 
     const { title, image, ratingAvg, id, downloads } = singleData;
     return (
-        <Link to={`/app-details/${id}`}>
+        <Link to={`/apps/${id}`}>
             <div className='shadow-lg bg-white p-4 rounded-lg hover:scale-105 transition ease-in-out h-full flex flex-col'>
                 <figure className='flex justify-center'>
                     <img src={image} alt="" />

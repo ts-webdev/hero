@@ -3,7 +3,7 @@ import logo from '../../assets/logo.png'
 
 const Loading = () => {
     return (
-        <div className='flex py-30 justify-center'>
+        <div className='flex py-30 justify-center px-5'>
             <div className='opacity-50'>
                 <p className='text-7xl font-bold flex gap-5'>L <span className='animate-spin'><img className='w-[5rem]' src={logo} /></span> ading...</p>
             </div>
