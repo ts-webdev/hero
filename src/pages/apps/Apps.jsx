@@ -11,8 +11,10 @@ const Apps = () => {
     const [filteredData, setFilteredData] = useState([])
 
     useEffect(() => {
-        setFilteredData(appData)
-    }, [appData])
+        if (!loading) {
+            setFilteredData(appData);
+        }
+    }, [appData, loading])
 
 
     const handleInput = (e) => {
@@ -21,7 +23,7 @@ const Apps = () => {
         setSearchLoading(true)
 
         setTimeout(() => {
-            const term = search.trim().toLocaleLowerCase()
+            const term = inputValue.trim().toLocaleLowerCase()
             const searchData = term ? appData.filter(matchData => matchData.title.toLocaleLowerCase().includes(term)) : appData
 
             setFilteredData(searchData)
@@ -51,7 +53,7 @@ const Apps = () => {
                     </label>
                 </div>
                 {
-                    searchLoading? <Loading></Loading> : filteredData.length === 0 ?
+                    searchLoading ? <Loading></Loading> : filteredData.length === 0 ?
                         <div className='flex flex-col items-center mt-30'>
                             <h4 className='text-4xl md:text-5xl font-bold text-[#001931]'>No Apps found</h4>
                             <button onClick={handleShowAll} className="mt-10 btn bg-linear-120 from-[#632ee3] to-[#9f62f2] text-white flex items-center px-7">Show All</button>
