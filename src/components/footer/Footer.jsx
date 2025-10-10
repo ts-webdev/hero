@@ -19,7 +19,7 @@ const Footer = () => {
                 </aside>
                 <nav>
                     <h6 className="footer-title">SERVICE</h6>
-                    <a className="link link-hover">APK Instal</a>
+                    <a className="link link-hover">APK Install</a>
                     <a className="link link-hover">Chrome Extension</a>
                     <a className="link link-hover">iPhone App</a>
                     <a className="link link-hover">APK Website Builder</a>

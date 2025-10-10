@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import useAppData from '../../hooks/useAppData';
 import download from '../../assets/icon-downloads.png'
 import ratingsImg from '../../assets/icon-ratings.png'
 import review from '../../assets/icon-review.png'
-import { storeData } from '../../utilities/utilities';
+import { getStoredData, storeData } from '../../utilities/utilities';
 import NumberAbbreviate from 'number-abbreviate';
 import { Bounce, toast } from 'react-toastify';
 import {
@@ -19,22 +19,30 @@ import {
     Legend,
     ResponsiveContainer,
 } from 'recharts';
+import Loading from '../../components/loading/Loading';
 
 const AppDetails = () => {
-
-    const [installBtn, setInstallBtn] = useState(true)
-
+    const [installBtn, setInstallBtn] = useState(false)
     const { id } = useParams()
+
+    useEffect(() => {
+        const existData = getStoredData()
+        const matchData = existData.find(id => id === id)
+        if (matchData) {
+            setInstallBtn(true)
+        }
+    }, [])
+
     const { appData, loading } = useAppData();
     const appDetailsData = appData.find(d => d.id === Number(id))
     if (loading) {
-        return <p>Loading...</p>
+        return <Loading></Loading>
     }
 
     const { image, title, companyName, size, description, downloads, ratingAvg, reviews, ratings } = appDetailsData
     const handleInstall = (id) => {
+         setInstallBtn(true)
         storeData(id)
-        setInstallBtn(false)
         toast.success(`"${title}" Installed Successfully`, {
             position: "top-right",
             autoClose: 1500,
@@ -46,6 +54,7 @@ const AppDetails = () => {
             theme: "light",
             transition: Bounce,
         });
+
     }
 
     const numAbbreviate = new NumberAbbreviate(["", "K", 'M', 'B', "T"])
@@ -76,11 +85,7 @@ const AppDetails = () => {
                                 <p className='text-4xl font-bold text-[#001931]'>{numAbbreviate.abbreviate(reviews)}</p>
                             </div>
                         </div>
-                        {
-                            installBtn ?
-                                <button onClick={() => handleInstall(id)} className='btn bg-[#00D390] text-white mt-7'>Install Now ({size}MB)</button> :
-                                <button disabled className='btn bg-[#00D390] text-white mt-7'>Installed</button>
-                        }
+                        <button disabled={installBtn ? 'disabled' : ''} onClick={() => handleInstall(id)} className='btn bg-[#00D390] text-white mt-7'>{installBtn ? 'Installed' : `Install Now (${size}MB)`}</button>
                     </div>
                 </div>
                 <hr className='border-gray-300 mt-10' />

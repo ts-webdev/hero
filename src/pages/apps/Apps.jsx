@@ -27,7 +27,7 @@ const Apps = () => {
                 <h1 className='text-4xl font-bold text-center text-[#001931]'>Our All Applications</h1>
                 <p className='text-[#627382] text-center'>Explore All Apps on the Market developed by us. We code for Millions</p>
                 <div className='flex justify-between mt-10'>
-                    <p className='text-2xl font-semibold text-[#001931]'>({searchData.length})Apps Found</p>
+                    <p className='text-2xl font-semibold text-[#001931]'>({searchData.length}) Apps Found</p>
                     <label>
                         <input value={search} onChange={handleInput} type="search" placeholder="Type here" className="input" />
                     </label>

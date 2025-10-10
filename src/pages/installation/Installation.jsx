@@ -27,7 +27,6 @@ const Installation = () => {
 
     useEffect(() => {
         const installedApp = appData.filter(singleApp => storedId.includes(singleApp.id))
-        console.log(installedApp)
         setAllInstalledData(installedApp)
     }, [appData, storedId])
 
@@ -38,13 +37,13 @@ const Installation = () => {
     const handleSort = (type) => {
         setSrot(type)
 
-        if(type === 'High to Low'){
-            const sortByHight = [...allInstalledData].sort((a,b)=>  b.downloads - a.downloads)
+        if (type === 'High to Low') {
+            const sortByHight = [...allInstalledData].sort((a, b) => b.downloads - a.downloads)
             setAllInstalledData(sortByHight)
         }
 
-        if(type === 'Low to High'){
-            const sortByLow = [...allInstalledData].sort((a,b)=>  a.downloads - b.downloads )
+        if (type === 'Low to High') {
+            const sortByLow = [...allInstalledData].sort((a, b) => a.downloads - b.downloads)
             setAllInstalledData(sortByLow)
         }
 
@@ -67,7 +66,11 @@ const Installation = () => {
                 </div>
                 <div className='space-y-3'>
                     {
-                        allInstalledData.map(app => <InstalledApp key={app.id} app={app} handleUninstall={handleUninstall}></InstalledApp>)
+                        allInstalledData.length === 0 ?
+                            <div className='flex flex-col items-center mt-10'>
+                                <h4 className='text-3xl font-bold text-gray-400'>No Apps Installed Yet</h4>
+                            </div>
+                            : allInstalledData.map(app => <InstalledApp key={app.id} app={app} handleUninstall={handleUninstall}></InstalledApp>)
                     }
                 </div>
             </div>

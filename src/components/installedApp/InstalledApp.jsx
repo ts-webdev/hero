@@ -9,7 +9,7 @@ const InstalledApp = ({ app, handleUninstall }) => {
 
 
     const handleAlert = () => {
-        toast.info(`"${app.title}" Uninstalled`, {
+        toast.warn(`"${app.title}" Uninstalled`, {
             position: "top-right",
             autoClose: 1500,
             hideProgressBar: false,
