@@ -22,16 +22,25 @@ import {
 import Loading from '../../components/loading/Loading';
 
 const AppDetails = () => {
-    const [installBtn, setInstallBtn] = useState(false)
     const { id } = useParams()
-
+    const [installedBtn, setInstalledBtn] = useState(false)
     useEffect(() => {
         const existData = getStoredData()
-        const matchData = existData.find(id => id === id)
-        if (matchData) {
-            setInstallBtn(true)
+        if (existData.includes(id)) {
+
+            setInstalledBtn(true)
         }
-    }, [])
+
+    }, [id])
+
+    const handleBtn = () => {
+        const existData = getStoredData()
+        if (existData.includes(id)) {
+
+            setInstalledBtn(true)
+        }
+
+    }
 
     const { appData, loading } = useAppData();
     const appDetailsData = appData.find(d => d.id === Number(id))
@@ -41,8 +50,8 @@ const AppDetails = () => {
 
     const { image, title, companyName, size, description, downloads, ratingAvg, reviews, ratings } = appDetailsData
     const handleInstall = (id) => {
-         setInstallBtn(true)
         storeData(id)
+        handleBtn()
         toast.success(`"${title}" Installed Successfully`, {
             position: "top-right",
             autoClose: 1500,
@@ -85,7 +94,7 @@ const AppDetails = () => {
                                 <p className='text-4xl font-bold text-[#001931]'>{numAbbreviate.abbreviate(reviews)}</p>
                             </div>
                         </div>
-                        <button disabled={installBtn ? 'disabled' : ''} onClick={() => handleInstall(id)} className='btn bg-[#00D390] text-white mt-7'>{installBtn ? 'Installed' : `Install Now (${size}MB)`}</button>
+                        <button disabled={installedBtn ? 'disabled' : ''} onClick={() => handleInstall(id)} className='btn bg-[#00D390] text-white mt-7'>{installedBtn ? 'Installed' : `Install Now (${size}MB)`}</button>
                     </div>
                 </div>
                 <hr className='border-gray-300 mt-10' />
