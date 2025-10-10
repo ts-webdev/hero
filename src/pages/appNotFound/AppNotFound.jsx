@@ -10,7 +10,7 @@ const AppNotFound = () => {
                 <img src={errImage} alt="" />
                 <h1 className='text-3xl sm:text-5xl font-semibold mt-5 text-center'>Oops, page not found!</h1>
                 <p className='text-[#627382] my-3 text-center'>The page you are looking for is not available.</p>
-                <Link onClick={()=> Navigate(-1)}><button className="btn bg-linear-120 from-[#632ee3] to-[#9f62f2] text-white flex items-center px-7">Go Back!</button></Link>
+                <Link to={'/apps'}><button className="btn bg-linear-120 from-[#632ee3] to-[#9f62f2] text-white flex items-center px-7">Go Back!</button></Link>
             </div>
         </div>
 

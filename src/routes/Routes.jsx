@@ -34,10 +34,6 @@ export const router = createBrowserRouter([
                 path: '/apps/:id',
                 Component: AppDetails,
                 errorElement: <AppNotFound></AppNotFound>
-            },
-            {
-                path: '/check',
-                Component: Loading
             }
         ]
     }
