@@ -3,6 +3,10 @@
 **Hero.io** is a modern single-page web application inspired by app stores like **Google Play** and **Apple App Store**.  
 Users can explore various types of apps, view details, and **install or uninstall** them dynamically.
 
+  <br />
+  <a href="https://tanvir-hero-io.netlify.app/"><strong>🌐 Live Site →</strong></a>
+  <br />
+
 ---
 
 ## 🚀 Features
